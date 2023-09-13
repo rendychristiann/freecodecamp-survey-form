@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+      <section class="bio">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required></input>
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required></input>
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input type="number" id="number" name="age" min="13" max="120" placeholder="Age" required></input>
+        </div>
+
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="role">
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
+      </select>
+      </section>
+
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label for="definitely" id="radiobutton"></label>
+      <input type="radio" id"definitely" name="recommend" value="definitely">Definitely</input>
+      <label for="maybe" id="radiobutton"></label>
+      <input type="radio" id"maybe" name="recommend" value="maybe">Maybe</input>
+      <label for="not-sure" id="radiobutton"></label>
+      <input type="radio" id="not-sure" name="recommend" value="not sure">Not sure</input>
+
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <label for="front-end-projects" id="checkboxinput"></label>
+      <input type="checkbox" id="front-end-projects" name="improved" value="front-end-projects">Front-end Projects</input>
+
+      <label for="back-end-projects" id="checkboxinput"></label>
+      <input type="checkbox" name="improved" value="back-end-projects">Back-end Projects</input>
+
+      <label for="data-visualization" id="checkboxinput"></label>
+      <input type="checkbox" id="data-visualization" name="improved" value="data-visualization">Data Visualization</input>
+
+      <label for="challenges" id="checkboxinput"></label>
+      <input type="checkbox" id="challenges" name="improved" value="challenges">Challenges</input>
+
+      <label for="open-source-community" id="checkboxinput"></label>
+      <input type="checkbox" id="open-source-community" name="improved" value="open-source-community">Open Source Community</input>
+
+      <label for="gitter-help-rooms" id="checkboxinput"></label>
+      <input type="checkbox" id="gitter-help-rooms" name="improved" value="gitter-help-rooms">Gitter help rooms</input>
+
+      <label for="videos" id="checkboxinput"></label>
+      <input type="checkbox" id="videos" name="improved" value="videos">Videos</input>
+
+      <label for="city-meetups" id="checkboxinput"></label>
+      <input type="checkbox" id="city-meetups" name="improved" value="city-meetups">City Meetups</input>
+
+      <label for="wiki" id="checkboxinput"></label>
+      <input type="checkbox" id="wiki" name="improved" value="wiki">Wiki</input>
+
+      <label for="forum" id="checkboxinput"></label>
+      <input type="checkbox" id="forum" name="improved" value="forum">Forum</input>
+
+      <label for="additional-courses" id="checkboxinput"></label>
+      <input type="checkbox" id="additional-courses" name="improved" value="additional-courses">Additional Courses</input>
+
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <label for="suggestions"></label>
+      <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="  Enter your comment here..."></textarea>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit"></input>
+  </form>
+</body>
+
+</html>
